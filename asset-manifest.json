@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Rootz/static/css/main.5a51a6d5.css",
-    "main.js": "/Rootz/static/js/main.1dcd05d1.js",
+    "main.js": "/Rootz/static/js/main.fa93f3bf.js",
     "index.html": "/Rootz/index.html",
     "main.5a51a6d5.css.map": "/Rootz/static/css/main.5a51a6d5.css.map",
-    "main.1dcd05d1.js.map": "/Rootz/static/js/main.1dcd05d1.js.map"
+    "main.fa93f3bf.js.map": "/Rootz/static/js/main.fa93f3bf.js.map"
   },
   "entrypoints": [
     "static/css/main.5a51a6d5.css",
-    "static/js/main.1dcd05d1.js"
+    "static/js/main.fa93f3bf.js"
   ]
 }
