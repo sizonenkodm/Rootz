@@ -13,6 +13,12 @@
     @media (max-width: 1300px) {
         width: calc(100% - 60px);
     }
+    &__logo {
+        cursor: pointer;
+        &:hover {
+            width: 105px;
+        }
+    }
     &__icon {
         cursor: pointer;
         display: none;

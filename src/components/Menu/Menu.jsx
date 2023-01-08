@@ -6,7 +6,7 @@ import styles from './Menu.module.scss';
 import MenuList from 'components/MenuList';
 
 const Menu = () => {
-    const { menuOpen, setMenuOpen } = useContext(Context);
+    const { menuOpen, setMenuOpen, home, setHome, setMission, setPlaces, setTeam } = useContext(Context);
     const navigate = useNavigate();
 
     const handleOpen = () => {
@@ -19,9 +19,20 @@ const Menu = () => {
         navigate(-1);
     }
 
+    const handleRedirect = () => {
+        menuOpen && setMenuOpen(false);
+        if (!home) {
+            setHome(true);
+            setMission(false);
+            setPlaces(false);
+            setTeam(false);
+        }
+        navigate('/');
+    }
+
     return (
         <div className={styles.menu}>
-            <img src='assets/menu/Logo.svg' alt='logo' />
+            <img className={styles.menu__logo} src='assets/menu/Logo.svg' alt='logo' onClick={handleRedirect} />
             {
                 menuOpen
                     ? <img className={styles.menu__icon} src='assets/menu/icon-close.svg' alt='close-icon' onClick={handleClose} />

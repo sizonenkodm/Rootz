@@ -7,6 +7,7 @@ import MissionScrean from 'pages/MissionScrean';
 import PlacesScrean from 'pages/PlacesScrean';
 import TeamScrean from 'pages/TeamScrean';
 import MenuList from 'components/MenuList';
+import Footer from 'components/Footer';
 
 export const Context = createContext(null);
 
@@ -37,8 +38,9 @@ function App() {
                     <Route path='/mission' element={<MissionScrean />} />
                     <Route path='/places' element={<PlacesScrean />} />
                     <Route path='/team' element={<TeamScrean />} />
-                    <Route path='/menu' element={<MenuList mobileVariant={true}/>} />
+                    <Route path='/menu' element={<MenuList mobileVariant={true} />} />
                 </Routes>
+                <Footer />
             </Context.Provider>
         </div>
     );
