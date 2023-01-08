@@ -1,0 +1,60 @@
+.form {
+    width: 422px;
+    height: 352px;
+    background: #f7f3f4;
+    -moz-border-radius: 16px;
+    -webkit-border-radius: 16px;
+    border-radius: 16px;
+    margin-right: 104px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: 1350px) {
+        margin-right: 30px;
+    }
+
+    @media (max-width: 925px) {
+        margin-right: 0;
+        width: 339px;
+        height: 328px;
+    }
+    &__title {
+        margin: 40px 0 24px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 56px;
+        text-transform: capitalize;
+        color: #222433;
+
+        @media (max-width: 925px) {
+            font-size: 24px;
+            line-height: 32px;
+        }
+    }
+    &__inputs {
+        width: 100%;
+        height: 112px;
+        margin-bottom: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__decor {
+        &_big {
+            position: absolute;
+            top: -20px;
+            right: -20px;
+        }
+        &_small {
+            position: absolute;
+            top: 55px;
+            right: -15px;
+        }
+    }
+}

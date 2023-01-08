@@ -1,0 +1,122 @@
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 0 160px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 1300px) {
+        padding: 0 30px;
+    }
+
+    @media (max-width: 1050px) {
+        flex-direction: column;
+        height: 120%;
+    }
+
+    @media (max-width: 600px) {
+        padding: 0 15px;
+    }
+
+    @media (max-width: 414px) {
+        align-items: flex-start;
+    }
+}
+
+.header {
+    width: 100%;
+    max-width: 1440px;
+    height: 784px;
+    margin: 70px auto 0;
+
+    @media (max-width: 1050px) {
+        height: 920px;
+    }
+
+    @media (max-width: 600px) {
+        height: 810px;
+    }
+    &__content {
+        width: 50%;
+        height: 528px;
+        z-index: 2;
+
+        @media (max-width: 950px) {
+            position: relative;
+            left: -10%;
+        }
+        @media (max-width: 600px) {
+            left: -15%;
+            height: 416px;
+        }
+
+        @media (max-width: 414px) {
+            left: 0;
+        }
+        & img {
+            width: 90%;
+            max-width: 543px;
+            min-width: 448px;
+            height: 293px;
+
+            @media (max-width: 600px) {
+                min-width: 339px;
+                max-width: 339px;
+                height: 181px;
+            }
+        }
+        & p {
+            width: 448px;
+            height: 64px;
+            margin: 59px 0 48px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;
+            color: #000000;
+
+            @media (max-width: 600px) {
+                width: 339px;
+            }
+        }
+    }
+    &__img {
+        width: 50%;
+        height: 528px;
+        position: relative;
+
+        @media (max-width: 1050px) {
+            margin-top: 60px;
+        }
+
+        @media (max-width: 600px) {
+            left: -2%;
+            align-self: flex-start;
+            margin-left: 50px;
+        }
+        &_parrot {
+            position: absolute;
+            top: -13.25%;
+            left: 12%;
+
+            @media (max-width: 600px) {
+                left: 20%;
+            }
+        }
+        &_card {
+            position: absolute;
+            bottom: -4.17%;
+            left: 0;
+
+            @media (max-width: 600px) {
+                width: 216px;
+                height: 255px;
+                left: -45px;
+                bottom: 85px;
+            }
+        }
+    }
+}

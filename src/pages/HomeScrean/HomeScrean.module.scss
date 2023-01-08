@@ -1,0 +1,42 @@
+.home {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    background: #f7f3f4;
+}
+
+.fadeIn {
+    -moz-animation: fadeIn 2000ms, ease-in;
+    -webkit-animation: fadeIn 2000ms, ease-in;
+    animation: fadeIn 2000ms, ease-in;
+}
+
+@-moz-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

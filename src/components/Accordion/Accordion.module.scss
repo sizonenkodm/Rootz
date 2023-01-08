@@ -1,0 +1,198 @@
+.info {
+    border-bottom: 1px solid rgba(30, 26, 32, 0.2);
+    width: 536px;
+    margin-bottom: 35px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @media (max-width: 610px) {
+        width: 339px;
+    }
+    &__content {
+        font-family: 'Poppins';
+        font-style: normal;
+        &_title {
+            display: inline;
+            margin-bottom: 32px;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 34px;
+            color: #1e1a20;
+            mix-blend-mode: normal;
+            opacity: 0.9;
+
+            @media (max-width: 925px) {
+                font-size: 18px;
+                line-height: 28px;
+            }
+
+            @media (max-width: 610px) {
+                width: 249px;
+            }
+        }
+        &_text {
+            width: 459px;
+            margin: 16px 0 32px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #1e1a20;
+            mix-blend-mode: normal;
+            opacity: 0.9;
+
+            @media (max-width: 925px) {
+                font-size: 15px;
+                line-height: 175%;
+            }
+
+            @media (max-width: 610px) {
+                width: 300px;
+            }
+        }
+    }
+    &__btn {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 32px;
+        border: none;
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        background: #f2726c;
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.fadeInUp {
+    -moz-animation: fadeInUp 800ms, ease-in;
+    -webkit-animation: fadeInUp 800ms, ease-in;
+    animation: fadeInUp 800ms, ease-in;
+}
+
+.rotateIn {
+    -moz-animation: rotateIn 500ms, ease-in;
+    -webkit-animation: rotateIn 500ms, ease-in;
+    animation: rotateIn 500ms, ease-in;
+}
+
+.rotateOut {
+    -moz-animation: rotateOut 500ms, ease-out;
+    -webkit-animation: rotateOut 500ms, ease-out;
+    animation: rotateOut 500ms, ease-out;
+}
+
+@-moz-keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@-moz-keyframes rotateIn {
+    from {
+        transform-origin: center;
+        transform: rotate3d(0, 0, 1, 200deg);
+        opacity: 0;
+    }
+    to {
+        transform-origin: center;
+        transform: none;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes rotateIn {
+    from {
+        transform-origin: center;
+        transform: rotate3d(0, 0, 1, 200deg);
+        opacity: 0;
+    }
+    to {
+        transform-origin: center;
+        transform: none;
+        opacity: 1;
+    }
+}
+
+@keyframes rotateIn {
+    from {
+        transform-origin: center;
+        transform: rotate3d(0, 0, 1, 200deg);
+        opacity: 0;
+    }
+    to {
+        transform-origin: center;
+        transform: none;
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes rotateOut {
+    from {
+        transform-origin: center;
+        opacity: 1;
+    }
+    to {
+        transform-origin: center;
+        transform: rotate3d(0, 0, 1, 200deg);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes rotateOut {
+    from {
+        transform-origin: center;
+        opacity: 1;
+    }
+    to {
+        transform-origin: center;
+        transform: rotate3d(0, 0, 1, 200deg);
+        opacity: 0;
+    }
+}
+
+@keyframes rotateOut {
+    from {
+        transform-origin: center;
+        opacity: 1;
+    }
+    to {
+        transform-origin: center;
+        transform: rotate3d(0, 0, 1, 200deg);
+        opacity: 0;
+    }
+}
